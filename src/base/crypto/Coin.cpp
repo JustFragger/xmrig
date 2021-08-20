@@ -53,7 +53,7 @@ static CoinName const coin_names[] = {
     { "arq",        Coin::ARQMA   },
     { "dero",       Coin::DERO    },
     { "keva",       Coin::KEVA    },
-    { "qmr",        Coin::QMR    },
+    { "qmr",        Coin::QMR     },
     { "ravencoin",  Coin::RAVEN   },
     { "raven",      Coin::RAVEN   },
     { "rvn",        Coin::RAVEN   },
