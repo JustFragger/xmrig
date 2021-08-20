@@ -91,7 +91,7 @@ xmrig::Algorithm::Id xmrig::Coin::algorithm(uint8_t blobVersion) const
         return Algorithm::RX_WOW;
             
     case QMR:
-        return Algorithm::RX_QMR;
+        return (blobVersion >= 12) ? Algorithm::RX_QMR : Algorithm::CN_R;
 
     case INVALID:
         break;
