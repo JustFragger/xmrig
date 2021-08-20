@@ -90,7 +90,7 @@ xmrig::Algorithm::Id xmrig::Coin::algorithm(uint8_t blobVersion) const
     case WOWNERO:
         return Algorithm::RX_WOW;
             
-    case WOWNERO:
+    case QUENERO:
         return Algorithm::RX_QMR;
 
     case INVALID:
