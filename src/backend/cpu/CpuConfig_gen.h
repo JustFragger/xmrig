@@ -136,6 +136,10 @@ size_t inline generate<Algorithm::RANDOM_X>(Threads<CpuThreads> &threads, uint32
     if (!threads.isExist(Algorithm::RX_WOW)) {
         count += threads.move(Algorithm::kRX_WOW, std::move(wow));
     }
+        
+    if (!threads.isExist(Algorithm::RX_QMR)) {
+        count += generate("rx/qmr", threads, Algorithm::RX_QMR, limit);
+    }
 
     count += generate(Algorithm::kRX, threads, Algorithm::RX_0, limit);
 
