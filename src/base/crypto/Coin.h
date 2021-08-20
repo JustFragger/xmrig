@@ -43,6 +43,7 @@ public:
         ARQMA,
         DERO,
         KEVA,
+        QMR,
         RAVEN,
         CONCEAL,
         WOWNERO
