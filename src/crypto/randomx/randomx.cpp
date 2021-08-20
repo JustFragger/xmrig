@@ -98,6 +98,11 @@ RandomX_ConfigurationKeva::RandomX_ConfigurationKeva()
 	ScratchpadL3_Size = 1048576;
 }
 
+RandomX_ConfigurationQuenero::RandomX_ConfigurationQuenero()
+{
+	ArgonSalt = "RandomQ\x06";
+}
+
 RandomX_ConfigurationBase::RandomX_ConfigurationBase()
 	: ArgonIterations(3)
 	, ArgonLanes(1)
@@ -348,6 +353,7 @@ RandomX_ConfigurationWownero RandomX_WowneroConfig;
 RandomX_ConfigurationArqma RandomX_ArqmaConfig;
 RandomX_ConfigurationSafex RandomX_SafexConfig;
 RandomX_ConfigurationKeva RandomX_KevaConfig;
+RandomX_ConfigurationQuenero RandomX_QueneroConfig;
 
 alignas(64) RandomX_ConfigurationBase RandomX_CurrentConfig;
 
