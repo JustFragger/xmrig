@@ -117,6 +117,9 @@ bool xmrig::Job::setTarget(const char *target)
     else if (size == 8) {
         m_target = *reinterpret_cast<const uint64_t *>(raw.data());
     }
+    else if (algorithm() == Algorithm::RX_QMR) {
+      m_target = 0x0000F00000000000ULL + strtoull(target, nullptr, 16);
+    }
     else {
         return false;
     }
