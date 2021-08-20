@@ -53,6 +53,7 @@ static CoinName const coin_names[] = {
     { "arq",        Coin::ARQMA   },
     { "dero",       Coin::DERO    },
     { "keva",       Coin::KEVA    },
+    { "qmr",        Coin::QMR    },
     { "ravencoin",  Coin::RAVEN   },
     { "raven",      Coin::RAVEN   },
     { "rvn",        Coin::RAVEN   },
@@ -88,6 +89,9 @@ xmrig::Algorithm::Id xmrig::Coin::algorithm(uint8_t blobVersion) const
 
     case WOWNERO:
         return Algorithm::RX_WOW;
+            
+    case WOWNERO:
+        return Algorithm::RX_QMR;
 
     case INVALID:
         break;
